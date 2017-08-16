@@ -1,9 +1,5 @@
----
-title: "PA1_template"
-author: "Yonatan Rafael"
-date: "August 16, 2017"
-output: html_document
----
+PA1_template
+==================================================
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -25,7 +21,7 @@ Read data
 data <- read.csv("activity.csv")
 ```
 
-###What is mean total number of steps taken per day?
+### What is mean total number of steps taken per day?
 
 Calculate the total number of steps taken per day.
 ```{r}
@@ -60,7 +56,7 @@ Interval of max number of steps taken.
 names(which.max(averagestepsbyinterval))
 ```
 
-## Imputing missing values
+### Imputing missing values
 
 Calculate total missing Values.
 ```{r}
@@ -91,7 +87,7 @@ median(estimatedsumstepsbydate)
 ```
 
 
-## Are there differences in activity patterns between weekdays and weekends?
+### Are there differences in activity patterns between weekdays and weekends?
 
 Create a new factor variable in the data set with two levels - "weekday" and "weekend"
 ```{r}
